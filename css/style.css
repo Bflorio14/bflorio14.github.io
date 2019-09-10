@@ -73,23 +73,24 @@ html, body {
   margin-top:10.5vmin;
   margin-bottom: 20vmin;
   padding: 10vmin;
-  background-color: rgba(0, 0, 0, 0);
-  width: 70%
+  width: 90%;
+  background: none;
 }
 
 #i_am {
   margin: 5vmin;
   margin-right: 0vmin;
-  margin-top: 10%;
-  font-family: var(--sub-font);
+  /* font-family: var(--sub-font); */
   font-size: 6vmin;
-  width: 55%;
+  width: 70%;
   float: left;
+  color: var(--coral);
+  background-color: #FFF7E3;
 }
 
 .typewrite {
   margin: 5vmin;
-  font-family: var(--sub-font);
+  /* font-family: var(--sub-font); */
   font-weight: bold;
   font-size: 6vmin;
   margin-left: 0vmin;
@@ -97,10 +98,18 @@ html, body {
 }
 
 #headshot {
-  width: 35%;
-  height: 35%;
+  width: 20%;
+  height: 20%;
   border-radius: 100%;
   float: left;
+}
+
+#searchIcon {
+  width: 3%;
+  height: 3%;
+  margin: 2%;
+  float: right;
+  align: center;
 }
 
 #progress-container {
