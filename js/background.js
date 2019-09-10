@@ -150,7 +150,6 @@ while (boxes.length < 14) {
 
 window.onresize = resize;
 window.onmousemove = function(e) {
-  console.log(e);
     var rect = c.getBoundingClientRect();
     light.x = e.clientX - rect.left; //== undefined ? e.layerX : e.offsetX;
     light.y = e.clientY - rect.top;//== undefined ? e.layerY : e.offsetY;
