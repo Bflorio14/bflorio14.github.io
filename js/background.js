@@ -12,14 +12,14 @@ var light = {
     y: 200
 }
 
-var colors = ["#B9306A", "#A1D3DC", "#C591D2"];
+var colors = ["#F78D3F", "#EA7878", "#FFEEB6", "#FCD271"];
 
 function drawLight() {
     ctx.beginPath();
     ctx.arc(light.x, light.y, 1000, 0, 2 * Math.PI);
     var gradient = ctx.createRadialGradient(light.x, light.y, 0, light.x, light.y, 1000);
-    gradient.addColorStop(0, "#7E8DC5");
-    gradient.addColorStop(1, "#736DAA");
+    gradient.addColorStop(0, "#FFF7E3");
+    gradient.addColorStop(1, "#9ADFDF");
     ctx.fillStyle = gradient;
     ctx.fill();
 
@@ -27,7 +27,7 @@ function drawLight() {
     ctx.arc(light.x, light.y, 20, 0, 2 * Math.PI);
     gradient = ctx.createRadialGradient(light.x, light.y, 0, light.x, light.y, 5);
     gradient.addColorStop(0, "#fff");
-    gradient.addColorStop(1, "#7E8DC5");
+    gradient.addColorStop(1, "#FFF7E3");
     ctx.fillStyle = gradient;
     ctx.fill();
 }
@@ -118,7 +118,7 @@ function Box() {
             ctx.lineTo(points[n].startX, points[n].startY);
             ctx.lineTo(points[n].endX, points[n].endY);
             ctx.lineTo(points[i].endX, points[i].endY);
-            ctx.fillStyle = "#736DAA";
+            ctx.fillStyle = "#9ADFDF";
             ctx.fill();
         };
     }

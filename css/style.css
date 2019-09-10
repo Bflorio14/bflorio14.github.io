@@ -1,21 +1,26 @@
 :root {
-  --magenta: #B9306A;
-  --dark-purple: #736DAA;
-  --blue-purple: #7E8DC5;
-  --light-blue: #A1D3DC;
-  --light-purple: #C591D2;
+  /* colors */
+  --light-blue: #9ADFDF;
+  --cream-white: #FFF7E3;
+  --sand-yellow: #FFEEB6;
+  --coral: #EA7878;
+  --sun-yellow: #FCD271;
+  --orange: #F78D3F;
+  /* font-family's */
+  --main-font: 'Montserrat Alternates', sans-serif;
+  --script-font: 'Homemade Apple', cursive;
+  --sub-font: 'Nunito', sans-serif;
 }
 
 html, body {
   width:  100%;
   height: 100%;
   margin: 0;
-  font-family: 'Montserrat Alternates', sans-serif;
-  font-weight: bold;
+  font-family: var(--main-font);
 }
 
 #canvas{
-		background-color: var(--dark-purple);
+		background-color: var(--light-blue);
     margin: 0;
 		width: 100%;
 		height: 100%;
@@ -38,44 +43,74 @@ html, body {
 }
 
 #menu {
-  background-color: var(--dark-purple);
+  background-color: var(--cream-white);
   padding: 3vmin;
   text-align: center;
-  background: linear-gradient(180deg, var(--blue-purple) 80%, var(--dark-purple));
+  /* background: linear-gradient(180deg, var(--blue-purple) 80%, var(--dark-purple)); */
 }
 
 .menu_items {
   padding: 3vmin;
-  color: white;
+  color: var(--orange);
   font-size: 2.5vmin;
   text-decoration: none;
 }
 
 .menu_items:hover {
-  background-color: var(--light-purple);
+  background-color: var(--orange);
+  color: var(--cream-white);
 }
 
 .content{
   padding: 30vmin;
-  margin-left: 5vmin;
-  margin-right:5vmin;
-  background-color: rgba(0,0,0,.7);
-  border-radius: 50px;
+  background-color: #EA787899;
+  margin: 5vmin;
   z-index: 100;
 }
 
 #home{
-  margin-top:11vmin;
+  float: center;
+  margin-top:10.5vmin;
+  margin-bottom: 20vmin;
+  padding: 10vmin;
+  background-color: rgba(0, 0, 0, 0);
+  width: 70%
+}
+
+#i_am {
+  margin: 5vmin;
+  margin-right: 0vmin;
+  margin-top: 10%;
+  font-family: var(--sub-font);
+  font-size: 6vmin;
+  width: 55%;
+  float: left;
+}
+
+.typewrite {
+  margin: 5vmin;
+  font-family: var(--sub-font);
+  font-weight: bold;
+  font-size: 6vmin;
+  margin-left: 0vmin;
+  text-indent: 2vmin;
+}
+
+#headshot {
+  width: 35%;
+  height: 35%;
+  border-radius: 100%;
+  float: left;
 }
 
 #progress-container {
   width: 100%;
-  height: 2vmin;
-  background-color: var(--blue-purple);
+  height: 1.5vmin;
+  background-color: var(--sand-yellow);
 }
 
 #progress-bar {
   width: 0;
-  height: 2vmin;
-  background: linear-gradient(80deg, var(--light-purple) 5%, var(--magenta));
+  height: 1.5vmin;
+  background: linear-gradient(80deg, var(--coral) 5%, var(--orange));
 }
