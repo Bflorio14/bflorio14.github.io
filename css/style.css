@@ -10,6 +10,8 @@ html, body {
   width:  100%;
   height: 100%;
   margin: 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: bold;
 }
 
 #canvas{
@@ -26,6 +28,23 @@ html, body {
   left: 0;
 }
 
+#menu {
+  background-color: var(--dark-purple);
+  padding: 3vmin;
+  text-align: center;
+  background: linear-gradient(180deg, var(--blue-purple) 80%, var(--dark-purple));
+}
+
+.menu_items {
+  padding: 3vmin;
+  color: white;
+  font-size: 2.5vmin;
+}
+
+.menu_items:hover {
+  background-color: var(--light-purple);
+}
+
 #progress-container {
   width: 100%;
   height: 2vmin;
@@ -35,5 +54,5 @@ html, body {
 #progress-bar {
   width: 0;
   height: 2vmin;
-  background: linear-gradient(80deg, var(--light-purple), var(--magenta));
+  background: linear-gradient(80deg, var(--light-purple) 5%, var(--magenta));
 }
