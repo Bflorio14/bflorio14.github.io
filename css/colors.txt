@@ -1,0 +1,6 @@
+COLOR SCHEME:
+magenta: #B9306A
+dark-purple: #736DAA
+purple-blue: #7E8DC5
+light-blue: #A1D3DC
+light-purple: #C591D2

@@ -1,0 +1,39 @@
+:root {
+  --magenta: #B9306A;
+  --dark-purple: #736DAA;
+  --blue-purple: #7E8DC5;
+  --light-blue: #A1D3DC;
+  --light-purple: #C591D2;
+}
+
+html, body {
+  width:  100%;
+  height: 100%;
+  margin: 0;
+}
+
+#canvas{
+		background-color: var(--dark-purple);
+    margin: 0;
+		width: 100%;
+		height: 100%;
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#progress-container {
+  width: 100%;
+  height: 2vmin;
+  background-color: var(--blue-purple);
+}
+
+#progress-bar {
+  width: 0;
+  height: 2vmin;
+  background: linear-gradient(80deg, var(--light-purple), var(--magenta));
+}
