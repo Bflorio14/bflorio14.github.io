@@ -149,9 +149,11 @@ while (boxes.length < 14) {
 }
 
 window.onresize = resize;
-c.onmousemove = function(e) {
-    light.x = e.offsetX == undefined ? e.layerX : e.offsetX;
-    light.y = e.offsetY == undefined ? e.layerY : e.offsetY;
+window.onmousemove = function(e) {
+  console.log(e);
+    var rect = c.getBoundingClientRect();
+    light.x = e.clientX - rect.left; //== undefined ? e.layerX : e.offsetX;
+    light.y = e.clientY - rect.top;//== undefined ? e.layerY : e.offsetY;
 }
 
 

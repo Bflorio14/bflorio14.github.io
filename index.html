@@ -5,6 +5,7 @@
 <script src="js/scroll.js"></script>
 </head>
 <body>
+  <div id="container">
   <canvas id="canvas"></canvas>
   <div id="navbar">
     <div id="progress-container">
@@ -12,17 +13,28 @@
       </div>
     </div>
     <div id="menu">
-      <a class="menu_items" id="home">Home
+      <a class="menu_items" id="nav_home" href="#home">Home
       </a>
-      <a class="menu_items" id="about">About
+      <a class="menu_items" id="nav_about" href="#about">About
       </a>
-      <a class="menu_items" id="resume">Resume
+      <a class="menu_items" id="nav_resume" href="#resume">Resume
       </a>
-      <a class="menu_items" id="portfolio">Portfolio
+      <a class="menu_items" id="nav_portfolio" href="#portfolio">Portfolio
       </a>
-      <a class="menu_items" id="projects">Projects
+      <a class="menu_items" id="nav_projects" href="#projects">Projects
       </a>
     </div>
+  </div>
+  <div class="content" id="home">
+  </div>
+  <div class="content" id="about">
+  </div>
+  <div class="content" id="resume">
+  </div>
+  <div class="content" id="portfolio">
+  </div>
+  <div class="content" id="projects">
+  </div>
   </div>
   <script src="js/background.js"></script>
 </body>
