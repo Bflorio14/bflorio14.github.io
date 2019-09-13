@@ -12,6 +12,21 @@
   --sub-font: 'Nunito', sans-serif;
 }
 
+a {
+  color: var(--sand-yellow);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--sun-yellow);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--cream-white);
+  text-decoration: underline;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
